@@ -1,0 +1,13 @@
+---
+
+Post:
+  p_001:
+    title: 'Hello World!'
+    excerpt: 'This is my Hello World post'
+    body: 'This is my first post'
+    author: 'Admin'
+        
+Comment:
+  c_001:
+    post_id: p_001
+    body: 'Wow, great post!'

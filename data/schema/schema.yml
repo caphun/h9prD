@@ -1,0 +1,39 @@
+---
+detect_relations: true
+
+Post:
+  actAs:
+    Sluggable:
+      fields: [title]
+    Timestampable: ~
+  columns:
+    id:
+      primary: true
+      autoincrement: true
+      type: integer(4)
+    title:
+      type: string(255)
+    excerpt:
+      type: string(255)
+    body:
+      type: string
+    author:
+      type: string(255)
+    published_at:
+      type: timestamp
+    is_published:
+      type: boolean
+
+Comment:
+  actAs:
+    Timestampable: ~
+  columns:
+    id:
+      primary: true
+      autoincrement: true
+      type: integer(4)
+    post_id: ~
+    name:
+      type: string(255)
+    body:
+      type: string
