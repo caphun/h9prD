@@ -6,8 +6,9 @@ Post:
     excerpt: 'This is my Hello World post'
     body: 'This is my first post'
     author: 'Admin'
+    published_at: '2009-10-20 00:00:00'
         
 Comment:
   c_001:
-    post_id: p_001
+    post_id: 1
     body: 'Wow, great post!'

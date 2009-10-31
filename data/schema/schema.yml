@@ -32,7 +32,8 @@ Comment:
       primary: true
       autoincrement: true
       type: integer(4)
-    post_id: ~
+    post_id:
+      type: integer(4)
     name:
       type: string(255)
     body:

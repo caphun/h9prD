@@ -12,5 +12,13 @@
  */
 class Post extends BasePost
 {
-
+	public function fetchAll()
+	{
+		return Doctrine::getTable('Post')->findAll();
+	}
+	
+	public function fetchOne($id)
+	{
+		return Doctrine::getTable('Post')->find($id);
+	}
 }
