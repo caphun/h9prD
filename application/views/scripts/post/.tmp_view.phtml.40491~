@@ -1,5 +1,0 @@
-<?php $post = $this->post ?>
-<h2><?php echo $post->title ?></h2>
-<p>Author: <?php echo $post->author ?></p>
-<p>Excerpt: <?php echo $post->excerpt ?></p>
-<p>Posted: <?php echo $post->published_at ?></p>
