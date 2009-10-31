@@ -4,7 +4,6 @@
 	<title>Zend Blog</title>
 </head>
 <body>
-	<h1>Zend Framework and Doctrine Blog</h1>
 	<?php echo $this->layout()->content ?>
 </body>	
 </html>

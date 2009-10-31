@@ -12,13 +12,5 @@
  */
 class Comment extends BaseComment
 {
-	public function fetchAll()
-	{
-		return Doctrine::getTable('Comment')->findAll();
-	}
-	
-	public function fetch($id)
-	{
-		return Doctrine::getTable('Comment')->find($id);
-	}
+
 }

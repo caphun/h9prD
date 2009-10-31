@@ -12,3 +12,6 @@ Comment:
   c_001:
     post_id: 1
     body: 'Wow, great post!'
+    name: 'Jon Doe'
+    website: 'http://jondoe.com'
+    email: 'jon@doe.com'

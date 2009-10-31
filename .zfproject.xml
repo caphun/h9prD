@@ -15,6 +15,12 @@
         <controllerFile controllerName="post">
           <actionMethod actionName="index"/>
           <actionMethod actionName="view"/>
+          <actionMethod actionName="add"/>
+          <actionMethod actionName="edit"/>
+        </controllerFile>
+        <controllerFile controllerName="comment">
+          <actionMethod actionName="index"/>
+          <actionMethod actionName="add"/>
         </controllerFile>
       </controllersDirectory>
       <layoutsDirectory enabled="false"/>
@@ -33,6 +39,18 @@
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="post">
             <viewScriptFile forActionName="view"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="comment">
+            <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="post">
+            <viewScriptFile forActionName="add"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="comment">
+            <viewScriptFile forActionName="add"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="post">
+            <viewScriptFile forActionName="edit"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>
@@ -65,6 +83,7 @@
       <testApplicationDirectory>
         <testApplicationBootstrapFile/>
         <testApplicationControllerDirectory>
+          <testApplicationControllerFile/>
           <testApplicationControllerFile/>
         </testApplicationControllerDirectory>
       </testApplicationDirectory>

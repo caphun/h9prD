@@ -1,1 +1,12 @@
-<br /><br /><center>View script for controller <b>post</b> and script/action name <b>index</b></center>
+<ul>
+<?php foreach ($this->post_list as $post) : ?>
+	
+	<li>
+		<h3><a href="<?php echo $this->url(array('controller' => 'post', 'action' => 'view', 'id' => $post->id)) ?>"><?php echo $post->title ?></a></h3>
+		<p>Author: <?php echo $post->author ?></p>
+		<p>Excerpt: <?php echo $post->excerpt ?></p>
+		<p>Posted: <?php echo $post->published_at ?></p>
+	</li>
+	
+<?php endforeach; ?>
+</ul>

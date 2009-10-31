@@ -8,6 +8,8 @@
  * @property integer $id
  * @property integer $post_id
  * @property string $name
+ * @property string $website
+ * @property string $email
  * @property string $body
  * @property Post $Post
  * 
@@ -32,6 +34,14 @@ abstract class BaseComment extends Doctrine_Record
              'length' => '4',
              ));
         $this->hasColumn('name', 'string', 255, array(
+             'type' => 'string',
+             'length' => '255',
+             ));
+        $this->hasColumn('website', 'string', 255, array(
+             'type' => 'string',
+             'length' => '255',
+             ));
+        $this->hasColumn('email', 'string', 255, array(
              'type' => 'string',
              'length' => '255',
              ));

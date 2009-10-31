@@ -32,9 +32,8 @@ Comment:
       primary: true
       autoincrement: true
       type: integer(4)
-    post_id:
-      type: integer(4)
-    name:
-      type: string(255)
-    body:
-      type: string
+    post_id: integer(4)
+    name: string(255)
+    website: string(255)
+    email: string(255)
+    body: string

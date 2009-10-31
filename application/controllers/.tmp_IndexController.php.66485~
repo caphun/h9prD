@@ -10,8 +10,7 @@ class IndexController extends Zend_Controller_Action
 
     public function indexAction()
     {
-    	$table = new Post();
-		$this->view->post_list = $table->fetchAll();
+		$this->view->post_list = Post::fetchAll();
     }
 
 

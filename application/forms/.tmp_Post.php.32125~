@@ -1,0 +1,12 @@
+<?php
+
+class Default_Forms_Post extends Zend_Form
+{
+	public function init()
+	{
+		$this->addElement('text', 'title', array('label' => 'Title'));
+		$this->addElement('text', 'excerpt', array('label' => 'Excerpt'));
+		$this->addElement('text', 'body', array('label' => 'Body'));
+		$this->addElement('submit', 'submit', array('label' => 'Save'));
+	}
+}
